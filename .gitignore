@@ -3,3 +3,16 @@
 .envrc
 .vscode
 .metals
+*.worksheet.sc
+.ammonite/
+.bloop/
+.bsp/
+.dotty-ide*
+.history/
+.idea/
+.metals/
+.scala-build/
+.scala/
+.vscode/
+metals.sbt
+target/
