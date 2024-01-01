@@ -1,5 +1,4 @@
-package myapp
-package helloapp
+package myapp.helloapp
 
 import scala.Console.*
 

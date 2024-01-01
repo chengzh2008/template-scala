@@ -1,5 +1,4 @@
-package myapp
-package helloapp
+package myapp.helloapp
 
 export org.scalacheck.Arbitrary
 export org.scalacheck.Cogen
