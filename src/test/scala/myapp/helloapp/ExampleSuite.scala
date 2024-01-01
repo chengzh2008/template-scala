@@ -1,4 +1,4 @@
-package myapp.com
+package myapp
 package helloapp
 
 final class ExampleSuite extends TestSuite:

@@ -1,4 +1,4 @@
-package myapp.com
+package myapp
 package helloapp
 
 export org.scalacheck.Arbitrary

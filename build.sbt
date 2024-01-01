@@ -1,6 +1,6 @@
 import Dependencies._
 
-ThisBuild / organization := "myapp.com"
+ThisBuild / organization := "myapp"
 ThisBuild / scalaVersion := "3.3.1"
 
 lazy val `hello-app` =

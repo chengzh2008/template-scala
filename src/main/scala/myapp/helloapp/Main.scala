@@ -1,4 +1,4 @@
-package myapp.com
+package myapp
 package helloapp
 
 @main def Main(args: String*): Unit =
