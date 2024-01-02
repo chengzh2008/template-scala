@@ -19,7 +19,7 @@ PKGNAME_DEFAULT="hello"
 read -r -p "Package name [$PKGNAME_DEFAULT]: " PKGNAME
 
 AUTHNAME_DEFAULT=$(git config --default "Firstname Lastname" --get user.name)
-read -r -p "Author name [$AUTH_NAME_DEFAULT]: " AUTHNAME
+read -r -p "Author name [$AUTHNAME_DEFAULT]: " AUTHNAME
 AUTHNAME=${AUTHNAME:-$AUTHNAME_DEFAULT}
 
 EMAIL_DEFAULT=$(git config --default "user@email.com" --get user.email)
@@ -32,8 +32,8 @@ echo "Substituting placeholder variables..."
 (
     set -x
     git ls-files | xargs -I _ sed -i '' \
-        -e "s#PKGNAME#$PROJNAME#g" \
-        -e "s#PKGNAME#$ORGNAME#g" \
+        -e "s#PROJNAME#$PROJNAME#g" \
+        -e "s#ORGNAME#$ORGNAME#g" \
         -e "s#PKGNAME#$PKGNAME#g" \
         -e "s#AUTHNAME#$AUTHNAME#g" \
         -e "s#EMAIL#$EMAIL#g" _
@@ -43,8 +43,7 @@ echo "Renaming files..."
 (
     set -x
     mv "src/main/scala/ORGNAME/PKGNAME" "src/main/scala/$ORGNAME/$PKGNAME"
-    mv "test/main/scala/ORGNAME/PKGNAME" "test/main/scala/$ORGNAME/$PKGNAME"
-    mv "README_TEMPLATE.md" "README.md"
+    mv "src/test/scala/ORGNAME/PKGNAME" "src/test/scala/$ORGNAME/$PKGNAME"
 ) 2>&1 | indent
 
 echo "Cleaning up..."
