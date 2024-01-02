@@ -9,12 +9,13 @@ PROJNAME_DEFAULT="$(basename "$(pwd)")"
 if [ "$PROJNAME_DEFAULT" = "template-scala" ]; then
     PROJNAME_DEFAULT="my-project"
 fi
-read -r -p "Package name [$PROJNAME_DEFAULT]: " PROJNAME
+read -r -p "Project name [$PROJNAME_DEFAULT]: " PROJNAME
 PROJNAME=${PROJNAME:-$PROJNAME_DEFAULT}
+
 ORGNAME_DEFAULT="myapp"
 read -r -p "Organization name [$ORGNAME_DEFAULT]: " ORGNAME
-PKG_NAME=${PKG_NAME:-$PKGNAME_DEFAULT}
-PKG_NAME_DEFAULT="hello"
+
+PKGNAME_DEFAULT="hello"
 read -r -p "Package name [$PKGNAME_DEFAULT]: " PKGNAME
 
 AUTHNAME_DEFAULT=$(git config --default "Firstname Lastname" --get user.name)
