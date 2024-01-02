@@ -1,4 +1,4 @@
-package myapp.helloapp
+package ORGNAME.PKGNAME
 
 export org.scalacheck.Arbitrary
 export org.scalacheck.Cogen

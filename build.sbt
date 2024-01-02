@@ -1,12 +1,12 @@
 import Dependencies._
 
-ThisBuild / organization := "myapp"
+ThisBuild / organization := "ORGNAME"
 ThisBuild / scalaVersion := "3.3.1"
 
-lazy val `hello-app` =
+lazy val `PROJNAME` =
   project
     .in(file("."))
-    .settings(name := "hello-app")
+    .settings(name := "PROJNAME")
     .settings(commonSettings)
     .settings(autoImportSettings)
     .settings(dependencies)

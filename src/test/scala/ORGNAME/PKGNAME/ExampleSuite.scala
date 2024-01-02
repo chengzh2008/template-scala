@@ -1,6 +1,6 @@
-package myapp.helloapp
+package ORGNAME.PKGNAME
 
-import myapp.lib.Add.add
+import ORGNAME.lib.Add.add
 
 final class ExampleSuite extends TestSuite:
   test("hello world"):

@@ -1,6 +1,6 @@
-package myapp.helloapp
+package ORGNAME.PKGNAME
 
-import myapp.lib.Add.add
+import ORGNAME.lib.Add.add
 
 @main def Main(args: String*): Unit =
   println("─" * 100)

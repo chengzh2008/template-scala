@@ -1,4 +1,4 @@
-package myapp.helloapp
+package ORGNAME.PKGNAME
 
 import scala.Console.*
 
