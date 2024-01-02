@@ -42,8 +42,10 @@ echo "Substituting placeholder variables..."
 echo "Renaming files..."
 (
     set -x
-    mv "src/main/scala/ORGNAME/PKGNAME" "src/main/scala/$ORGNAME/$PKGNAME"
-    mv "src/test/scala/ORGNAME/PKGNAME" "src/test/scala/$ORGNAME/$PKGNAME"
+    mv "src/main/scala/ORGNAME/PKGNAME" "src/main/scala/ORGNAME/$PKGNAME"
+    mv "src/main/scala/ORGNAME" "src/main/scala/$ORGNAME"
+    mv "src/test/scala/ORGNAME/PKGNAME" "src/test/scala/ORGNAME/$PKGNAME"
+    mv "src/test/scala/ORGNAME" "src/test/scala/$ORGNAME"
 ) 2>&1 | indent
 
 echo "Cleaning up..."
