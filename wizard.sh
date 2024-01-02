@@ -48,6 +48,7 @@ echo "Renaming files..."
     mv "src/main/scala/ORGNAME" "src/main/scala/$ORGNAME"
     mv "src/test/scala/ORGNAME/PKGNAME" "src/test/scala/ORGNAME/$PKGNAME"
     mv "src/test/scala/ORGNAME" "src/test/scala/$ORGNAME"
+    mv "README_TEMPLATE.md" "README.md"
 ) 2>&1 | indent
 
 echo "Cleaning up..."
