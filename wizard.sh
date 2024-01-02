@@ -14,9 +14,11 @@ PROJNAME=${PROJNAME:-$PROJNAME_DEFAULT}
 
 ORGNAME_DEFAULT="myapp"
 read -r -p "Organization name [$ORGNAME_DEFAULT]: " ORGNAME
+ORGNAME=${ORGNAME:-$ORGNAME_DEFAULT}
 
 PKGNAME_DEFAULT="hello"
 read -r -p "Package name [$PKGNAME_DEFAULT]: " PKGNAME
+PKGNAME=${PKGNAME:-$PKGNAME_DEFAULT}
 
 AUTHNAME_DEFAULT=$(git config --default "Firstname Lastname" --get user.name)
 read -r -p "Author name [$AUTHNAME_DEFAULT]: " AUTHNAME
